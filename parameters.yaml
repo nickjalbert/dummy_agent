@@ -9,8 +9,10 @@ agent:
         num_episodes: 100
 network:
     init:
+        foo: 100
 environment:
     init:
+        bar: 200
 __global__:
     backing_dir: "./.aos/data"
     discount: .99
