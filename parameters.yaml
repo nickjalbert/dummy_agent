@@ -1,5 +1,5 @@
 agent:
-    init:
+    __init__:
         batch_size: 10
         samples_per_insert: 2
         min_replay_size: 10
@@ -8,10 +8,10 @@ agent:
     learn:
         num_episodes: 100
 network:
-    init:
+    __init__:
         foo: 100
 environment:
-    init:
+    __init__:
         bar: 200
 __global__:
     backing_dir: "./.aos/data"

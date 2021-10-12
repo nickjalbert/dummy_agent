@@ -2,11 +2,12 @@ import agentos
 
 
 class DummyAgent(agentos.Agent):
-    def init(self, **kwargs):
-        print('Running DummyAgent.init()')
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        print('Inside of DummyAgent.__init__()')
 
     def evaluate(self, num_episodes):
-        print("Running DummyAgent.evaluate()")
+        print("Inside of DummyAgent.evaluate()")
 
     def learn(self, num_episodes):
-        print("Running DummyAgent.learn()")
+        print("Inside of DummyAgent.learn()")

@@ -1,3 +1,3 @@
 class DummyNetwork:
-    def init(self, **kwargs):
-        print('Running DummyNetwork.init()')
+    def __init__(self, **kwargs):
+        print('Inside of DummyNetwork.__init__()')
